@@ -13,6 +13,7 @@ import CourseDetail from "./pages/CourseDetail";
 import MentorDetail from "./pages/MentorDetail";
 import JobDetail from "./pages/JobDetail";
 import NotFound from "./pages/NotFound";
+import Jobs from "./pages/Jobs";
 
 const queryClient = new QueryClient();
 
@@ -28,6 +29,7 @@ const App = () => (
           <Route path="/signup" element={<Signup />} />
           <Route path="/courses/:id" element={<CourseDetail />} />
           <Route path="/mentors/:id" element={<MentorDetail />} />
+          <Route path="/jobs" element={<Jobs />} />
           <Route path="/jobs/:id" element={<JobDetail />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
